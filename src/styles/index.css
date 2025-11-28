@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+:root{
+  --brand-teal: #14b8a6;
+  --brand-sky: #0369a1;
+  --accent: #fb923c;
+}
+
+html,body,#root{ height:100%; }
+body{ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background-color: var(--bg, #fbf6f0); }
+
+/* Small animation for footer wave */
+.animate-wave{ transform: translateX(0); }
+
+/* Make images thumb nicer */
+img{ -o-object-fit: cover; object-fit: cover; }
+
+/* Generic container for site */
+.container{ max-width: 1200px; }
+
+/* Dark-mode variables */
+html.dark{ --bg: #0b1220 }
+html.dark body{ background-color: #071023 }
+
+/* Smooth transitions */
+* { transition: background-color 0.2s linear, color 0.15s linear, border-color 0.2s linear; }
